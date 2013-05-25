@@ -1,0 +1,32 @@
+/* You can change the font; Google has a lot of good fonts */
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+/* check this out for custom variables: http://twitter.github.io/bootstrap/customize.html*/
+$btnPrimaryBackground :green;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+/* This changes the shadow under the nav bar */
+/* Inspect Elements to check out how bootstrap did theirs */
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.footer {
+
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
